@@ -11,3 +11,72 @@ h3{
   text-align: center;
 }
 
+#animate{
+    background-color: red;
+    -webkit-animation-name: meme; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: meme;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction: alternate;
+}
+
+@keyframes meme {
+   0% {background-color:red;}
+   16.666% {background-color:orange;}
+   33.333% {background-color:yellow;}
+   50% {background-color:green;}
+  66.666% {background-color:blue;}
+   83.33% {background-color:indigo;}
+   100% {background-color:violet;}
+
+
+}
+#rotate{
+	animation-name: please;
+ animation-duration: 1s; /* or: Xms */
+ animation-iteration-count: infinite; /* or: normal */
+ animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+ animation-fill-mode: forwards; /* or: backwards, both, none */
+}
+   @keyframes please {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(666deg);
+  }
+  }
+  #skew{
+	animation-name: que;
+ animation-duration: 1s; /* or: Xms */
+ animation-iteration-count: infinite; /* or: normal */
+ animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+ animation-fill-mode: forwards; /* or: backwards, both, none */
+}
+   @keyframes que {
+  from {
+    transform: skew(0deg);
+  }
+  to {
+    transform: skew(666deg);
+  }
+  }
+   #all{
+	animation-name: quem;
+ animation-duration: 60s; /* or: Xms */
+ animation-iteration-count: infinite; /* or: normal */
+ animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+ animation-fill-mode: forwards; /* or: backwards, both, none */
+}
+   @keyframes quem {
+  from {
+    transform: skew(0deg) rotate(90deg);
+    background-color: blue;
+      }
+  to {
+    transform: skew(360deg) rotate(180deg);
+    background-color: green;
+  }
+  }
